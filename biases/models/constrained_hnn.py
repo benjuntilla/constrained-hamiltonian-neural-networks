@@ -1,12 +1,12 @@
 import torch
 import torch.nn as nn
 from torchdiffeq import odeint
-from biases.models.utils import FCtanh,FCswish,FCsoftplus, Linear, Reshape
-from biases.dynamics.hamiltonian import (
+from .biases.models.utils import FCtanh,FCswish,FCsoftplus, Linear, Reshape
+from .biases.dynamics.hamiltonian import (
     EuclideanT,
     ConstrainedHamiltonianDynamics,
 )
-from biases.systems.rigid_body import rigid_DPhi,rigid_Phi
+from .biases.systems.rigid_body import rigid_DPhi,rigid_Phi
 from typing import Optional, Tuple, Union
 from oil.utils.utils import export, Named
 import networkx as nx

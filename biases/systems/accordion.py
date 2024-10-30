@@ -2,11 +2,11 @@
 # import networkx as nx
 # import numpy as np
 # from oil.utils.utils import export
-# from biases.systems.rigid_body import RigidBody, BodyGraph, project_onto_constraints
-# from biases.animation import Animation
-# from biases.systems.chain_pendulum import ChainPendulum
-# from biases.systems.magnet_pendulum import MagnetPendulum
-# from biases.utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
+# from .biases.systems.rigid_body import RigidBody, BodyGraph, project_onto_constraints
+# from .biases.animation import Animation
+# from .biases.systems.chain_pendulum import ChainPendulum
+# from .biases.systems.magnet_pendulum import MagnetPendulum
+# from .biases.utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
 # import copy
 
 

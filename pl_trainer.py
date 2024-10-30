@@ -17,18 +17,18 @@ import wandb
 import PIL
 
 import numpy as np
-from biases.systems.chain_pendulum import ChainPendulum
-from biases.systems.rotor import Rotor
-from biases.systems.coupled_pendulum import CoupledPendulum
-from biases.systems.magnet_pendulum import MagnetPendulum
-from biases.systems.gyroscope import Gyroscope
-from biases.models.constrained_hnn import CHNN
-from biases.models.constrained_lnn import CLNN
-from biases.models.hnn import HNN
-from biases.models.lnn import LNN, DeLaN
-from biases.models.nn import NN, DeltaNN
-from biases.datasets import RigidBodyDataset
-from biases.systems.rigid_body import rigid_Phi, project_onto_constraints
+from .biases.systems.chain_pendulum import ChainPendulum
+from .biases.systems.rotor import Rotor
+from .biases.systems.coupled_pendulum import CoupledPendulum
+from .biases.systems.magnet_pendulum import MagnetPendulum
+from .biases.systems.gyroscope import Gyroscope
+from .biases.models.constrained_hnn import CHNN
+from .biases.models.constrained_lnn import CLNN
+from .biases.models.hnn import HNN
+from .biases.models.lnn import LNN, DeLaN
+from .biases.models.nn import NN, DeltaNN
+from .biases.datasets import RigidBodyDataset
+from .biases.systems.rigid_body import rigid_Phi, project_onto_constraints
 
 
 def str_to_class(classname):

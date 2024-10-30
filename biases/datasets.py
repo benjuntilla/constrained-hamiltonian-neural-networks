@@ -4,9 +4,9 @@ import os
 import networkx as nx
 from torch.utils.data import Dataset
 from oil.utils.utils import Named, export
-from biases.systems.rigid_body import RigidBody
-from biases.systems.chain_pendulum import ChainPendulum
-from biases.utils import rel_err, FixedSeedAll
+from .biases.systems.rigid_body import RigidBody
+from .biases.systems.chain_pendulum import ChainPendulum
+from .biases.utils import rel_err, FixedSeedAll
 
 @export
 class RigidBodyDataset(Dataset, metaclass=Named):

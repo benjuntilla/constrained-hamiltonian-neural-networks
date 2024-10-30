@@ -6,11 +6,11 @@ import torch
 from torch.utils.data import DataLoader
 from torch.optim import Adam,AdamW
 from oil.utils.utils import LoaderTo, islice, FixedNumpySeed, cosLr
-from biases.systems.chain_pendulum import ChainPendulum
+from .biases.systems.chain_pendulum import ChainPendulum
 import biases.datasets as datasets
-from biases.models import HNN,LNN,NN,CHNN,CH,CL
-from biases.datasets import RigidBodyDataset
-from biases.dynamics_trainer import IntegratedDynamicsTrainer
+from .biases.models import HNN,LNN,NN,CHNN,CH,CL
+from .biases.datasets import RigidBodyDataset
+from .biases.dynamics_trainer import IntegratedDynamicsTrainer
 import biases.models as models
 import biases.systems as systems
 import pickle

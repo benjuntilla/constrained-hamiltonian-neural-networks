@@ -3,8 +3,8 @@ from torch import Tensor
 import torch.nn as nn
 from torchdiffeq import odeint
 from oil.utils.utils import export, Named
-from biases.models.utils import FCsoftplus, FCtanh, Reshape, Linear, CosSin
-from biases.dynamics.hamiltonian import HamiltonianDynamics, GeneralizedT
+from .biases.models.utils import FCsoftplus, FCtanh, Reshape, Linear, CosSin
+from .biases.dynamics.hamiltonian import HamiltonianDynamics, GeneralizedT
 from typing import Tuple
 
 

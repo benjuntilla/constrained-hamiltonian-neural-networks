@@ -4,7 +4,7 @@ from oil.utils.utils import Eval
 from oil.model_trainers import Trainer
 from oil.utils.utils import export
 import numpy as np
-from biases.systems.rigid_body import project_onto_constraints
+from .biases.systems.rigid_body import project_onto_constraints
 
 @export
 class IntegratedDynamicsTrainer(Trainer):

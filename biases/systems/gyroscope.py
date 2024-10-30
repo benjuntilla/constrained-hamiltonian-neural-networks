@@ -1,14 +1,14 @@
 import torch
 import networkx as nx
 from oil.utils.utils import export
-from biases.systems.rigid_body import RigidBody,BodyGraph,project_onto_constraints
-#from biases.systems.chain_pendulum import PendulumAnimation
+from .biases.systems.rigid_body import RigidBody,BodyGraph,project_onto_constraints
+#from .biases.systems.chain_pendulum import PendulumAnimation
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.animation as animation
-from biases.animation import Animation
-from biases.utils import euler2frame,comEuler2bodyX,bodyX2comEuler
-from biases.utils import read_obj, compute_moments
+from .biases.animation import Animation
+from .biases.utils import euler2frame,comEuler2bodyX,bodyX2comEuler
+from .biases.utils import read_obj, compute_moments
 import numpy as np
 
 

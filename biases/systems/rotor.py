@@ -1,13 +1,13 @@
 from oil.utils.utils import export
-from biases.systems.rigid_body import RigidBody,BodyGraph,project_onto_constraints
-from biases.animation import Animation
+from .biases.systems.rigid_body import RigidBody,BodyGraph,project_onto_constraints
+from .biases.animation import Animation
 import numpy as np
-from biases.utils import euler2frame,comEuler2bodyX,read_obj
-from biases.utils import comEuler2bodyX, bodyX2comEuler
+from .biases.utils import euler2frame,comEuler2bodyX,read_obj
+from .biases.utils import comEuler2bodyX, bodyX2comEuler
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.animation as animation
-from biases.utils import read_obj, compute_moments
+from .biases.utils import read_obj, compute_moments
 import torch
 
 

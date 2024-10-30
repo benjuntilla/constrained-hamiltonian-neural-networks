@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torchdiffeq import odeint
 from oil.utils.utils import export, Named
-from biases.models.utils import FCsoftplus,FCtanh, Linear, CosSin
+from .biases.models.utils import FCsoftplus,FCtanh, Linear, CosSin
 from typing import Tuple, Union
 
 
