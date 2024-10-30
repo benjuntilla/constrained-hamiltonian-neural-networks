@@ -319,7 +319,7 @@ def project_onto_constraints(G,z,tol=1e-5):
             if J.shape[-2]<J.shape[-1]:
                 #Jinv = torch.pinverse(J)
                 #diff = -(Jinv@Phi.reshape(bs,-1,1)).reshape(*z.shape)
-                diff = (J.permute(0,2,1)@torch.solve(-Phi.reshape(bs,-1,1),J@J.permute(0,2,1))[0]).reshape(*z.shape)
+                diff = (J.permute(0,2,1)@torch.linalg.solve(J@J.permute(0,2,1),-Phi.reshape(bs,-1,1))[0]).reshape(*z.shape)
             else: #cry
                 print(J.shape)
             #print(violation)

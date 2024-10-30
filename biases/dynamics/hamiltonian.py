@@ -97,7 +97,7 @@ def Proj(DPhi):
     if DPhi.shape[-1]==0: return lambda M:M # (no constraints)
     def _P(M):
         DPhiT = DPhi.transpose(-1, -2)
-        X, _ = torch.solve(DPhiT @ M, DPhiT @ J(DPhi))
+        X = torch.linalg.solve(DPhiT @ J(DPhi), DPhiT @ M)
         return M - J(DPhi @ X)
 
     return _P
