@@ -2,8 +2,8 @@ import torch
 import networkx as nx
 from torchdiffeq import odeint  # odeint_adjoint as odeint
 from oil.utils.utils import Named, export
-from .biases.animation import Animation
-from .biases.dynamics.hamiltonian import ConstrainedHamiltonianDynamics, EuclideanT
+from ..animation import Animation
+from ..dynamics.hamiltonian import ConstrainedHamiltonianDynamics, EuclideanT
 import numpy as np
 from collections import OrderedDict, defaultdict
 from scipy.spatial.transform import Rotation

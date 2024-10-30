@@ -2,8 +2,8 @@ import torch
 import networkx as nx
 import numpy as np
 from oil.utils.utils import export,FixedNumpySeed
-from .biases.systems.rigid_body import RigidBody, BodyGraph, project_onto_constraints
-from .biases.animation import Animation
+from .rigid_body import RigidBody, BodyGraph, project_onto_constraints
+from ..animation import Animation
 import copy
 
 @export

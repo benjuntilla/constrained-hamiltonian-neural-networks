@@ -1,9 +1,9 @@
 import torch
 import networkx as nx
 from oil.utils.utils import export
-from .biases.systems.rigid_body import RigidBody,BodyGraph,project_onto_constraints
-from .biases.systems.chain_pendulum import PendulumAnimation
-from .biases.utils import euler2frame,comEuler2bodyX,read_obj
+from .rigid_body import RigidBody,BodyGraph,project_onto_constraints
+from .chain_pendulum import PendulumAnimation
+from ..utils import euler2frame,comEuler2bodyX,read_obj
 import numpy as np
 
 @export

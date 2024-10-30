@@ -2,11 +2,11 @@ import torch
 import networkx as nx
 import numpy as np
 from oil.utils.utils import export,FixedNumpySeed
-from .biases.systems.rigid_body import RigidBody, BodyGraph, project_onto_constraints
-from .biases.animation import Animation
-from .biases.systems.chain_pendulum import PendulumAnimation
-from .biases.systems.magnet_pendulum import MagnetPendulum
-from .biases.utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
+from .rigid_body import RigidBody, BodyGraph, project_onto_constraints
+from ..animation import Animation
+from .chain_pendulum import PendulumAnimation
+from .magnet_pendulum import MagnetPendulum
+from ..utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
 import copy
 
 @export

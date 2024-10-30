@@ -1,10 +1,10 @@
 import torch
 import networkx as nx
 from oil.utils.utils import export,FixedNumpySeed
-from .biases.systems.rigid_body import RigidBody,BodyGraph
-from .biases.systems.chain_pendulum import PendulumAnimation
+from .rigid_body import RigidBody,BodyGraph
+from .chain_pendulum import PendulumAnimation
 import numpy as np
-from .biases.utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
+from ..utils import bodyX2comEuler,comEuler2bodyX, frame2euler,euler2frame
 
 @export
 class MagnetPendulum(RigidBody):
